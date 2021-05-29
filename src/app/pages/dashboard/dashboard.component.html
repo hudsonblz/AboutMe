@@ -1,0 +1,51 @@
+<div class="dashboard">
+    <div class="dashboard__main-menu">
+        <div class="dashboard__main-menu__picture-box">
+            <img class="dashboard__main-menu__picture-box--picture" src="/assets/profile-min.jpg" alt="Esse sou eu" />
+        </div>
+        <div class="dashboard__main-menu__text-box">
+            <div class="dashboard__main-menu__text-box--title text text--title text--white">Hudson Mendonça Almeida
+            </div>
+            <div class="dashboard__main-menu__text-box--subtitle text text--subtitle text--white">Analista de sistemas,
+                Desenvolvedor e entusiasta da tecnologia</div>
+            <div class="dashboard__main-menu__text-box--resume text text--small text--white">Meu nome é Thais Maria e eu
+                gosto de desenvolver soluções práticas para problemas do dia a dia.<br><br>
+
+                A primeira linguagem de programação que aprendi foi C# e em meu emprego anterior criei vários
+                projetos usando WPF e
+                Windows Forms para automatizar rotinas antes feitas de forma manual ou facilitando processos que
+                demandavam muito esforço.<br><br>
+
+                Agora estou iniciando minha carreira como dev Front-end e descobrindo coisas novas a cada dia.</div>
+        </div>
+    </div>
+    <div class="dashboard__skills">
+        <div class="dashboard__skills__panel">
+            <div class="dashboard__skills__panel--title text text--title text--dark">
+                Habilidades e Interesses
+            </div>
+            <div class="dashboard__skills__panel__items">
+                <div class="dashboard__skills__panel__items--item" *ngFor="let item of acquiredSkills">
+                    <fa-icon [icon]="item.icon" class="dashboard__skills__panel__items--icon"></fa-icon>
+                    <div class="dashboard__skills__panel__items--text text text--white">{{item.skillName}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard__skills__panel">
+            <div class="dashboard__skills__panel--title text text--title text--dark">
+                Estudos
+            </div>
+            <div class="dashboard__skills__panel__items">
+                <div class="dashboard__skills__panel__items--item" *ngFor="let item of learningSkills">
+                    <fa-icon [icon]="item.icon" class="dashboard__skills__panel__items--icon"></fa-icon>
+                    <div class="dashboard__skills__panel__items--text text text--white">{{item.skillName}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard__projects"></div>
+    <div class="dashboard__contact"></div>
+
+</div>
